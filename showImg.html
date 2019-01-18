@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>show img</title>
+  <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- {{ message }} -->
+    <input class="input-file" type="file" onchange="upload(this)" />
+    <div class="left">
+      <p v-for="(url, index) in urls" :key="index" class="img-item" :class="{ active: activeInd === index }" @click="showImg(url,index)"><span style="color:#666;font-size:12px;">{{index+1}}:</span>{{url}}</p>
+    </div>
+    <div class="right" id="right">
+      <div class="operation">
+        <i class="iconfont download">&#xe7ef;</i>
+        <i class="iconfont star">&#xe7df;</i>
+      </div>
+      <img :src="imgUrl" alt="">
+    </div>
+  </div>
+  <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
