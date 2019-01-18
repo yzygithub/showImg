@@ -1,7 +1,7 @@
 ### 图片查看器
 
 有了鉴黄数据集，但是只有链接怎么办，我写了个图片查看器来给各位老司机鉴赏
-
+![image.png](https://upload-images.jianshu.io/upload_images/2628600-1274961c95acf1ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 TODO: 下载图片  
 TODO: 收藏图片  
 TODO: 随机显示图片  
